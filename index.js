@@ -24,6 +24,9 @@ app.listen(3000, function() {
     console.log('listening on 3000')
   });
 app.get('/', function(req, res) {
-    res.render('index.ejs', {})
+    res.render('home.ejs', {})
   });
-app.post
+app.get("/cursos" , function(req, res){
+  res.render("cursos.ejs", {})
+});
+
