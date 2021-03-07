@@ -27,6 +27,13 @@ app.get('/', function(req, res) {
     res.render('home.ejs', {})
   });
 app.get("/cursos" , function(req, res){
-  res.render("cursos.ejs", {})
+  let images = [
+    {src: "img/business.jpg"  },
+    {src: "img/laptop.jpg"  },
+    {scr: "img/marketing.jpg"  }
+
+  ];
+  res.render("cursos.ejs", {images:images});
+
 });
 
